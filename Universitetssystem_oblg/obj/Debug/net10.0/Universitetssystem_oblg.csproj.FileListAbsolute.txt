@@ -1,0 +1,14 @@
+/Users/emmaleiknes/RiderProjects/Universitetssystem_oblg/Universitetssystem_oblg/bin/Debug/net10.0/Universitetssystem_oblg
+/Users/emmaleiknes/RiderProjects/Universitetssystem_oblg/Universitetssystem_oblg/bin/Debug/net10.0/Universitetssystem_oblg.deps.json
+/Users/emmaleiknes/RiderProjects/Universitetssystem_oblg/Universitetssystem_oblg/bin/Debug/net10.0/Universitetssystem_oblg.runtimeconfig.json
+/Users/emmaleiknes/RiderProjects/Universitetssystem_oblg/Universitetssystem_oblg/bin/Debug/net10.0/Universitetssystem_oblg.dll
+/Users/emmaleiknes/RiderProjects/Universitetssystem_oblg/Universitetssystem_oblg/bin/Debug/net10.0/Universitetssystem_oblg.pdb
+/Users/emmaleiknes/RiderProjects/Universitetssystem_oblg/Universitetssystem_oblg/obj/Debug/net10.0/Universitetssystem_oblg.GeneratedMSBuildEditorConfig.editorconfig
+/Users/emmaleiknes/RiderProjects/Universitetssystem_oblg/Universitetssystem_oblg/obj/Debug/net10.0/Universitetssystem_oblg.AssemblyInfoInputs.cache
+/Users/emmaleiknes/RiderProjects/Universitetssystem_oblg/Universitetssystem_oblg/obj/Debug/net10.0/Universitetssystem_oblg.AssemblyInfo.cs
+/Users/emmaleiknes/RiderProjects/Universitetssystem_oblg/Universitetssystem_oblg/obj/Debug/net10.0/Universitetssystem_oblg.csproj.CoreCompileInputs.cache
+/Users/emmaleiknes/RiderProjects/Universitetssystem_oblg/Universitetssystem_oblg/obj/Debug/net10.0/Universitetssystem_oblg.dll
+/Users/emmaleiknes/RiderProjects/Universitetssystem_oblg/Universitetssystem_oblg/obj/Debug/net10.0/refint/Universitetssystem_oblg.dll
+/Users/emmaleiknes/RiderProjects/Universitetssystem_oblg/Universitetssystem_oblg/obj/Debug/net10.0/Universitetssystem_oblg.pdb
+/Users/emmaleiknes/RiderProjects/Universitetssystem_oblg/Universitetssystem_oblg/obj/Debug/net10.0/Universitetssystem_oblg.genruntimeconfig.cache
+/Users/emmaleiknes/RiderProjects/Universitetssystem_oblg/Universitetssystem_oblg/obj/Debug/net10.0/ref/Universitetssystem_oblg.dll
