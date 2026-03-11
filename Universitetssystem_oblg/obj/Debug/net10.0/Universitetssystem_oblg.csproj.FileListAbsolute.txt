@@ -12,3 +12,4 @@
 /Users/emmaleiknes/RiderProjects/Universitetssystem_oblg/Universitetssystem_oblg/obj/Debug/net10.0/Universitetssystem_oblg.pdb
 /Users/emmaleiknes/RiderProjects/Universitetssystem_oblg/Universitetssystem_oblg/obj/Debug/net10.0/Universitetssystem_oblg.genruntimeconfig.cache
 /Users/emmaleiknes/RiderProjects/Universitetssystem_oblg/Universitetssystem_oblg/obj/Debug/net10.0/ref/Universitetssystem_oblg.dll
+/Users/emmaleiknes/RiderProjects/Universitetssystem_oblg/Universitetssystem_oblg/obj/Debug/net10.0/Universitetssystem_oblg.sourcelink.json
