@@ -22,7 +22,7 @@ class Program
             Console.WriteLine("6. Lån bok");
             Console.WriteLine("7. Returner bok");
             Console.WriteLine("8. Registrer bok");
-            Console.WriteLine("0. Avlsutt");
+            Console.WriteLine("0. Avslutt");
             Console.Write("Valg: ");
             
             string valg = Console.ReadLine();
@@ -75,32 +75,65 @@ class Program
             Console.WriteLine("Fant ikke kurset");
             return;
         }
+        
+        Console.WriteLine("1. Meld på kurs");
+        Console.WriteLine("2. Meld av kurs");
+        Console.Write("Valg: ");
+        string valg = Console.ReadLine();
 
-        if (kurs.Deltakere.Count >= kurs.MaksPlasser)
+        if (valg == "1")
         {
-            Console.WriteLine("Kurset er fullt");
-            return;
-        }
-        
-        Console.Write("Skriv inn StudentID: ");
-        int studentID = int.Parse(Console.ReadLine());
-        
-        Student student = studenter.FirstOrDefault(s => s.StudentID == studentID);
-        if (student == null)
-        {
-            Console.WriteLine("Fant ikke studenten");
-            return;
-        }
+            if (kurs.Deltakere.Count >= kurs.MaksPlasser)
+            {
+                Console.WriteLine("Kurset er fullt");
+                return;
+            }
 
-        if (kurs.Deltakere.Contains(student))
-        {
-            Console.WriteLine("Studenten er allerede meldt på dette kurset. ");
-            return;
+            Console.Write("Skriv inn StudentID: ");
+            int studentID = int.Parse(Console.ReadLine());
+
+            Student student = studenter.FirstOrDefault(s => s.StudentID == studentID);
+            if (student == null)
+            {
+                Console.WriteLine("Fant ikke studenten");
+                return;
+            }
+
+            if (kurs.Deltakere.Contains(student))
+            {
+                Console.WriteLine("Studenten er allerede meldt på dette kurset. ");
+                return;
+            }
+
+            kurs.Deltakere.Add(student);
+            student.Kurs.Add(kurs);
+            Console.WriteLine($"{student.Navn} er meldt på {kurs.KursNavn}!");
         }
-        
-        kurs.Deltakere.Add(student);
-        student.Kurs.Add(kurs);
-        Console.WriteLine($"{student.Navn} er meldt på {kurs.KursNavn}!");
+        else if (valg == "2")
+        {
+            Console.Write("Skriv inn StudentID: ");
+            int studentID = int.Parse(Console.ReadLine());
+            Student student = studenter.FirstOrDefault(s => s.StudentID == studentID);
+            if (student == null)
+            {
+                Console.WriteLine("Fant ikke studenten");
+                return;
+            }
+
+            if (kurs.Deltakere.Contains(student))
+            {
+                Console.WriteLine("Studenten er ikke meldt på dette kurset. ");
+                return;
+            }
+
+            kurs.Deltakere.Remove(student);
+            student.Kurs.Remove(kurs);
+            Console.WriteLine($"{student.Navn} er nå meldt av {kurs.KursNavn}.");
+        }
+        else
+        {
+            Console.WriteLine("Ugyldig valg.");
+        }
     }
 
     static void PrintKurs(List<Kurs> kursliste)
@@ -114,6 +147,18 @@ class Program
         foreach (Kurs kurs in kursliste)
         {
             Console.WriteLine($"[{kurs.KursKode}] {kurs.KursNavn} - {kurs.StudiePoeng} stp - {kurs.MaksPlasser} plasser" );
+
+            if (kurs.Deltakere.Count == 0)
+            {
+                Console.WriteLine("Ingen deltakere påmeldt");
+            }
+            else
+            {
+                foreach (Student student in kurs.Deltakere)
+                {
+                    Console.WriteLine($"- [{student.StudentID}] {student.Navn}");
+                }
+            }
         }
     }
 
@@ -261,6 +306,8 @@ class Program
         bøker.Add(nyBok);
         Console.WriteLine($"´{nyBok.Tittel}´ er registrert");
     }
+    
+    
 
     static void Avslutt()
     {
