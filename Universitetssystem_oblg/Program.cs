@@ -732,9 +732,7 @@ class Program
         }
     }
 
-
-
-
+    
     static void Avslutt()
     {
         Console.WriteLine("Ha en fin dag videre");

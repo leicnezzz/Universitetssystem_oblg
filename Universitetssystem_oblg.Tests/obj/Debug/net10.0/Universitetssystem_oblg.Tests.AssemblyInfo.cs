@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Universitetssystem_oblg.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+51d74c17d4d5753b3de83891f37cd69060afd52b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7546ea1d1269e38f99b0492ff3e0d53d791c2830")]
 [assembly: System.Reflection.AssemblyProductAttribute("Universitetssystem_oblg.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Universitetssystem_oblg.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
